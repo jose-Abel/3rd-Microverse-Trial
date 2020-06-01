@@ -3,12 +3,6 @@
   <head>
     <meta charset="utf-8">
 
-    <style>
-      @media screen and (min-width: 768px) and (max-width: 900px) {
-
-      }
-    </style>
-
     <link rel='stylesheet' href="styles.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,51 +17,105 @@
   </head>
   <body>
     <section id="welcome-section">
-      <h1>
-        Hello I'm a web developer!
-      </h1>
-    </section>
-    <nav class="navbar navbar-inverse">
+      <div class="container">
+            <h1>
+                    Hello! We are <strong>Jose Abel Ramirez </strong><br> and <strong> Deyan Todorov, </strong><br> JavaScript <strong>Developers</strong> <br>with passion <strong>for programming!</strong>
+            </h1>
+    </div>
+
+  </section>
+
+    <nav class="navbar navbar-inverse" id="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Work with us</a></li>
         </ul>
       </div>
     </nav>
 
-<div id="about-us">
-<h2>About Us</h2>
-<p> We are proffesional web developers!</p>
-</div>
+    <section id="about">
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <h2>About Us</h2>
+        <p id="about_p"> We are apprentice web developers, Jose is from Dominican Republic, a beautiful island in the caribbean sea and Deyan is from Bulgaria a country with beautiful mountains and nature!</p>
+      </div>
+    </section>
 
-<div id="profile-link">
-    <a href="https://github.com/deikdesign">Deyan Todorov </a>
     <br>
 
-    <a href="https://github.com/joseabelramirezfrontany">Jose Abel Ramirez Frontany</a>
-    </div>
+    <section id="projects" class="portfolio">
+        <div class="container">
+                <h2>Portfolio</h2>
+                <article class="project-tile">
+                    <div class="project-details">
+                        <h3 class="project-title">Tribute Page</h3>
+                        <h6 class="project-course">html/css</h6>
+                        <p class="project-url"><small><strong>You can see it: </strong><a href="./tribute-page/tribute.html">Tribute Page</a></small></p>
+                        <p class-project-description>This is a Tribute Page dedicated to Dr. Norman Borlaug to comply with Microverse trials.</p>
+                    </div>
+                        <figure class="project-imageContainer">
+                            <img class="project-image" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" width="500">
+                        </figure>
+                </article>
 
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class='project-tile'>
-    </div>
+              <article class="project-tile">
+                  <div class="project-details">
+                      <h3 class="project-title">Weather App</h3>
+                      <h6 class="project-course">CSS / HTML / JavaScript / NodeJS </h6>
+                      <p class="project-url"><small><strong>You can see it at: </strong><a href="https://ramirez-weather-application.herokuapp.com">Weather App</a></small></p>
+                      <p class-project-description>This was an amazing project It connect to mapbox.com API and darksky.net API to display the humidity of the weather in degrees and the percentage of rain.</p>
+                  </div>
+                      <figure class="project-imageContainer">
+                      <img class="project-image" src="weatherapp.png"  width="500">
+                      </figure>
+              </article>
+        </div>
+
     </section>
-    <div id="image">
-      <a href="tribute-page/tribute.html">
-      <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
-      <p>
-      Tribute page
-      </p>
-      </a>
-    </div>
 
-    <footer id="contact">Work with Us</footer>
+    <section id="contact" class="contact">
+       <div class="container">
+       <form action=# class="form-email">
+           <h3>Let's create something together!</h3>
+           <input type="text" placeholder="Enter your email">
+           <button>Send</button>
+       </form>
 
+       <div class="social">
+         <p id=p_name> Deyan: </p>
+           <a href="https://github.com/deikdesign" target="_blank" id="profile-link" class="social-link github"></a>
+       </div>
 
-    </body>
+       <div class="social">
+         <p id=p_name> Jose: </p>
+           <a href="https://github.com/joseabelramirezfrontany" target="_blank" id="profile-link" class="social-link github"></a>
+
+       </div>
+
+      </div>
+
+   </section>
+
+   <footer class="footer">
+       <div class="container">
+       <div>
+           <p>
+               Designed by Deyan Todorov and
+                Jose Abel Ramirez Frontany
+                   <br>
+               </div>
+           </p>
+       </div>
+      </div>
+
+   </footer>
+
+  </body>
 </html>
