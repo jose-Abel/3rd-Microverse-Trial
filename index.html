@@ -2,7 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+
+    <style>
+      @media screen and (min-width: 768px) and (max-width: 900px) {
+
+      }
+    </style>
+
+    <link rel='stylesheet' href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Portfolio
+    </title>
   </head>
   <body>
     <section id="welcome-section">
@@ -10,24 +27,47 @@
         Hello I'm a web developer!
       </h1>
     </section>
-<nav id="navbar">
-  <ul>
-    <li>
-    <a href="#about"> About</a></li>
-  <li><a href="">Projects</a></li>
-<li>
-<a href="">Contact</a></li>
-</li>
-</ul>
-</nav>
-<h2 id="about">About</h2>
-<p> I am proffesional web developer</p>
-      <section id="projects">
-        <div class='project-tile'>
-
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
         </div>
-      </section>
-<a href="tribute-page/tribute.html">Tribute page </a>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Work with us</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  </body>
+<div id="about-us">
+<h2>About Us</h2>
+<p> We are proffesional web developers!</p>
+</div>
+
+<div id="profile-link">
+    <a href="https://github.com/deikdesign">Deyan Todorov </a>
+    <br>
+
+    <a href="https://github.com/joseabelramirezfrontany">Jose Abel Ramirez Frontany</a>
+    </div>
+
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class='project-tile'>
+    </div>
+    </section>
+    <div id="image">
+      <a href="tribute-page/tribute.html">
+      <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
+      <p>
+      Tribute page
+      </p>
+      </a>
+    </div>
+
+    <footer id="contact">Work with Us</footer>
+
+
+    </body>
 </html>
